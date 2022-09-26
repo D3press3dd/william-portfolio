@@ -1,0 +1,6 @@
+[
+  { "path": "/about", "content": "About" },
+  { "path": "/skills", "content": "My Skills" },
+  { "path": "/work", "content": "Work" },
+  { "path": "/contact", "content": "Contact" }
+]

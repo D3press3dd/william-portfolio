@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import useWindowsPosition from '../hooks/useWindowsPosition'
-import { ActiveLink } from '../styled-components/ActiveLink'
+import { ActiveLink } from '../styled-components'
+import links from '../data/links.json'
 
 const Menu = styled.menu<{shadow: Boolean}>`
     align-items: center;
@@ -18,7 +19,6 @@ const Menu = styled.menu<{shadow: Boolean}>`
     width: 100%;
     transition: box-shadow .1s ease;
 
-
     li{
         font-weight: 500;
     }
@@ -29,12 +29,6 @@ const MenuItem = styled.div`
     gap: 1rem;
 
 `
-const links = [
-  { path: '/about', content: 'About' },
-  { path: '/skills', content: 'My Skills' },
-  { path: '/work', content: 'Work' },
-  { path: '/contact', content: 'Contact' }
-]
 
 const Navbar = (): JSX.Element => {
   const viewportPosition = useWindowsPosition()

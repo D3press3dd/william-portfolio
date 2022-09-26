@@ -1,11 +1,12 @@
-import Navbar from './components/Navbar'
-import MainContainer from './components/MainContainer'
+import { MainContainer, Navbar } from './components'
 import AppRoutes from './routes/AppRoutes'
+import SocialBar from './components/SocialBar'
 
 function App (): JSX.Element {
   return (
     <>
       <Navbar />
+      <SocialBar/>
       <MainContainer>
         <AppRoutes />
       </MainContainer>
