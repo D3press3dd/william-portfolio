@@ -17,6 +17,7 @@ const Menu = styled.menu<{shadow: Boolean}>`
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 5;
     transition: box-shadow .1s ease;
 
     li{
@@ -35,7 +36,7 @@ const Navbar = (): JSX.Element => {
   return (
     <Menu id='menu' shadow={viewportPosition} >
         <MenuItem>
-            <ActiveLink link={'/home'}>Logo</ActiveLink>
+            <ActiveLink link={'/'}>Logo</ActiveLink>
         </MenuItem>
 
         <MenuItem>
