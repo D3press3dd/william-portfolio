@@ -4,7 +4,7 @@ interface Props {
   children: JSX.Element | JSX.Element[]
 }
 const Main = styled.main`
-    padding: 2rem;
+    padding: 2rem 6rem;
 `
 
 const MainContainer = ({ children }: Props): JSX.Element => {
