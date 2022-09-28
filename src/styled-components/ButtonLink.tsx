@@ -43,7 +43,7 @@ const Button = styled(NavLink)`
 
 const ButtonLink = ({ link, children }: ButtonLinkProps): JSX.Element => {
   return (
-    <Button to={link}>{children}</Button>
+    <Button title={children} to={link}>{children}</Button>
   )
 }
 
