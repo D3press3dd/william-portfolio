@@ -6,7 +6,7 @@ import links from '../data/links.json'
 const Menu = styled.menu<{shadow: Boolean}>`
     align-items: center;
     box-shadow:${props => props.shadow === true ? 'rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px' : 'none'};
-    background-color: #181818;
+    background-color: ${props => props.shadow === true ? '#181818' : 'transparent'};
     color: white;
     display: flex;
     font-weight: 700;
@@ -18,7 +18,7 @@ const Menu = styled.menu<{shadow: Boolean}>`
     top: 0;
     width: 100%;
     z-index: 5;
-    transition: box-shadow .1s ease;
+    transition: box-shadow .3s ease, background-color .3s ease;
 
     li{
         font-weight: 500;

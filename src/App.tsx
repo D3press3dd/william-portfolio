@@ -10,7 +10,9 @@ function App (): JSX.Element {
       <MainContainer>
         <AppRoutes />
       </MainContainer>
-      <div style={{ height: '200vh' }}></div>
+      {/* <div style={{ height: '200vh' }}>
+         para debug
+      </div> */}
     </>
   )
 }

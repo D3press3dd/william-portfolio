@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 const calculateViewportDistance = (positionY: number): Boolean => {
-  if (positionY > 200) return true
+  if (positionY > 100) return true
   return false
 }
 

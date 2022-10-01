@@ -18,6 +18,9 @@ const Home = (): JSX.Element => {
         </h1>
       </div>
       <div>
+        <h4 style={{ fontWeight: '300' }}><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. tate minima! Suscipit, quasi.</i></h4>
+      </div>
+      <div style={{ paddingTop: '2rem' }}>
         <ButtonLink link='/contact'>Contact me!</ButtonLink>
       </div>
     </>

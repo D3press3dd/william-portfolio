@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { SiCodewars } from 'react-icons/si'
 import ReactDOM from 'react-dom'
+import { MyCustomLink } from './MyCustomLink'
 
 const SocialContainer = styled.div`
   display: flex;
@@ -49,16 +50,23 @@ const SocialBar = (): JSX.Element => {
     <>
       <SocialContainer>
         <h2>
-          <FiGithub className='icon' />
+          <MyCustomLink href='https://www.google.com' title='google'>
+            <FiGithub className='icon' />
+          </MyCustomLink>
         </h2>
         <h2>
-          <FiLinkedin className='icon' />
+          <MyCustomLink href='https://www.google.com' title='google'>
+            <FiLinkedin className='icon' />
+          </MyCustomLink>
         </h2>
         <h2>
-          <SiCodewars className='icon' />
+          <MyCustomLink href='https://www.google.com' title='google'>
+            <SiCodewars className='icon' />
+          </MyCustomLink>
         </h2>
       </SocialContainer>
-    </>, document.getElementById('social-sidebar') as HTMLDivElement
+    </>,
+    document.getElementById('social-sidebar') as HTMLDivElement
   )
 }
 

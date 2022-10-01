@@ -15,6 +15,7 @@ const Button = styled(NavLink)`
     padding: 1rem 2rem;
     position: relative;
     text-decoration: none;
+    z-index: 2;
     transition: all .5s ease;
 
     &::after{
@@ -43,7 +44,9 @@ const Button = styled(NavLink)`
 
 const ButtonLink = ({ link, children }: ButtonLinkProps): JSX.Element => {
   return (
-    <Button title={children} to={link}>{children}</Button>
+    <Button role={'link'} title={children} to={link}>
+      {children}
+    </Button>
   )
 }
 
