@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
+import { motion } from 'framer-motion'
 
-const SingleLetter = styled.span`
+const SingleLetter = styled(motion.span)`
   font-size: 80px;
   font-weight: 900;
 
